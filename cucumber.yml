@@ -1,0 +1,4 @@
+json: -f json -o log/report.json -f pretty
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless

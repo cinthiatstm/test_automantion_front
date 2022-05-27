@@ -1,46 +1,46 @@
-# [Fleury] - QA Automação
-## Desafio Web
+# Unidades Fleury - Automação WEB com Ruby 
 
-### Requisitos
+Automation of web scenarios involving fleury units in the Fleury website.
 
-- Ruby
-- Capybara
-- Cucumber
-- BDD
-- Report
-- Page Objects
+![](Screenshot_home.png)
 
-### Sugestões:
 
-- Aplicar alguma técnica de Page Objects e Justificar
-- Evitar Hard-Code
-- Inserir comentários/justificativas sobre seus scripts de automação 
+## Usage
 
-### Teste:
+Simple navigation between screens.
 
-O Objetivo do teste consiste em validar os endereços das unidades localizadas nos Shopping's através do site [Fleury](http://www.fleury.com.br)
+![](Screenshot_unidades.png)
+![](Screenshot_detalhes.png)
 
-### ![image.png](/images/01.png)
 
-### ![image.png](/images/02.png)
+## Development setup
 
-### ![image.png](/images/03.png)
+For the development, the Ruby language was used.
 
-### ![image.png](/images/04.png)
+Dependencies
 
-### Deve-se seguir estes passos:
+```sh
+make install requires gems 
 
-- Elaborar o BDD com o comportamento das screens acima
-- Montar o script de automação com todos os requisitos solicitados
-- Gerar um report e inclui-lo no commit, comprovando que o teste deu OK ao ser executado
+```
 
-### Como submeter?
+## Run test
 
-Deverá ser enviado um PULL REQUEST com o seu teste.
+run simple test
+```sh
+cucumber
 
-#### Como funciona?
+```
+run test with report generate
+```sh
+cucumber -f json -o report.json -f pretty
 
-- Fork deste repositório (Não clonar direto)
-- Clonar a partir do repositório que foi criado na sua conta
-- Commitará e subirá as alterações para o SEU fork(repositório)
-- Abra um Pull Request para este repositório
+```
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki

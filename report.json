@@ -1,0 +1,184 @@
+[
+  {
+    "id": "visualização-de-unidades",
+    "uri": "features/gherkins/unidades_fleury.feature",
+    "keyword": "Funcionalidade",
+    "name": "Visualização de unidades",
+    "description": "  Para que eu possa visualizar as unidades da Fleury\n  Sendo um usuário\n  Posso então ter ver as opções através do menu",
+    "line": 3,
+    "elements": [
+      {
+        "id": "visualização-de-unidades;filtrar-unidades",
+        "keyword": "Cenário",
+        "name": "filtrar unidades",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que acessei a tela de unidades",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/unidades_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5559924000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "clicar no botão filtrar",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/unidades_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1812652300
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo acessar os detalhes da unidade",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/unidades_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 275626800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filtrar_unidades",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154596000
+            }
+          }
+        ]
+      },
+      {
+        "id": "visualização-de-unidades;acessar-detalhes-da-unidade",
+        "keyword": "Cenário",
+        "name": "acessar detalhes da unidade",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na unidade selecionada",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/unidades_steps.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to find css \"#button-scheduling-exam\" (Capybara::ElementNotFound)\n./features/support/pages/unidades.rb:21:in `unit'\n./features/step_definitions/unidades_steps.rb:14:in `\"que estou na unidade selecionada\"'\nfeatures/gherkins/unidades_fleury.feature:17:in `que estou na unidade selecionada'",
+              "duration": 30016529800
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo validar o endereço da unidade",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/unidades_steps.rb:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@detalhes_unidades",
+            "line": 15
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6700
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.37.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133140900
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
